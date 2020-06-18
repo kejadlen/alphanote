@@ -3,6 +3,12 @@ tags: [ recipe, entree, to-try ]
 
 # Chili
 
+## 2020.06.15
+
+Made the version with ground beef, which turned out pretty good. The end result
+was reminiscent of a sloppy joe-style chili, which is not my preference, so
+next time, try short ribs or other chunked meat instead.
+
 ## [Serious Eats: Ground Beef and Bean Chili][serious-eats]
 
 [serious-eats]: https://www.seriouseats.com/recipes/2019/01/pressure-cooker-ground-beef-and-bean-chili.html
@@ -14,7 +20,9 @@ tags: [ recipe, entree, to-try ]
 ### Ingredients
 
 - 1 tablespoon (15ml) vegetable oil, plus more if needed
-- 2 1/2 pounds (1.1kg) ground beef, at least 15% fat
+- Meat
+  - 2 1/2 pounds (1.1kg) ground beef, at least 15% fat
+  - 2 1/2 pounds (1.1kg) boneless beef short ribs
 - 1 medium (8-ounce; 225g) yellow onion, diced
 - Kosher salt
 - 3 medium cloves garlic, minced
@@ -38,11 +46,19 @@ tags: [ recipe, entree, to-try ]
 
 ### Directions
 
-1. Heat oil in pressure cooker over medium-high heat (or, if using electric
-   pressure cooker, using sauté setting), until shimmering. Add about 1/4 of
-   the ground beef, stirring occasionally, until very well browned. Using a
-   slotted spoon, remove browned beef from cooker and set aside. Drain all but
-   1 tablespoon fat from cooker.
+1.
+  - Heat oil in pressure cooker over medium-high heat (or, if using electric
+    pressure cooker, using sauté setting), until shimmering. Add about 1/4 of
+    the ground beef, stirring occasionally, until very well browned. Using a
+    slotted spoon, remove browned beef from cooker and set aside. Drain all but
+    1 tablespoon fat from cooker.
+
+  - Season beef all over with salt. Heat oil in pressure cooker over
+    medium-high heat (or, if using electric pressure cooker, using sauté
+    setting), until shimmering. Working in batches, add short rib slabs and
+    cook, turning, until well browned on the two largest sides. Transfer
+    browned short ribs to a cutting board and cut into 1/2-inch chunks. Set
+    aside.
 
 1. Add onion and cook, stirring and scraping up any browned bits from bottom of
    cooker, until lightly golden, about 5 minutes (cooking time will depend
