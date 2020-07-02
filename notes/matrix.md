@@ -1,6 +1,8 @@
----
+# Matrix
 
----
+
+
+## Setup
 
 Use the Docker image to generate a configuration file. This should use the
 `generate` command, but that results in the following error:

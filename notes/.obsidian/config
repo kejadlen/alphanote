@@ -1,0 +1,89 @@
+{
+  "theme": "obsidian",
+  "pluginEnabledStatus": {
+    "File explorer": true,
+    "Search": true,
+    "Quick switcher": true,
+    "Graph view": true,
+    "Backlinks": true,
+    "Command palette": true,
+    "Markdown format importer": true,
+    "Word count": true
+  },
+  "workspaceLayout": {
+    "id": "9632a17432180736",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb1a530fd93b5fac",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "leftSidedock": {
+    "id": "cc1c0189b68150a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "14e3dc9ca986815d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62126597b1578a82",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c23f975006ea29ef",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "rightSidedock": {
+    "id": "e76199d69d1f7cb2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e31fda702175ced",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11d8c4f7eac18768",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "zoom-tabs.md",
+    "so-you-want-to-talk-about-race.md",
+    "setup-computer.md",
+    "homebrew-docker.md",
+    "favorite-talks.md"
+  ]
+}

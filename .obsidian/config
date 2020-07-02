@@ -1,0 +1,91 @@
+{
+  "theme": "obsidian",
+  "pluginEnabledStatus": {
+    "File explorer": true,
+    "Search": true,
+    "Quick switcher": true,
+    "Graph view": true,
+    "Backlinks": true,
+    "Command palette": true,
+    "Markdown format importer": true,
+    "Word count": true
+  },
+  "workspaceLayout": {
+    "id": "f3a18ff66e8eda84",
+    "type": "split",
+    "children": [
+      {
+        "id": "e4b64ddf931d779d",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "notes/kubernetes.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "leftSidedock": {
+    "id": "e759f1881ab0b536",
+    "type": "split",
+    "children": [
+      {
+        "id": "10a7d095ae160ee1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4d23f270c44a2559",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0d292a5c1deca507",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "rightSidedock": {
+    "id": "5ab5707a2f1b77fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "030be657c2736fbd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8b79c0ed72fba78",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "lastOpenFiles": [
+    "notes/Untitled.md",
+    "notes/zoom-tabs.md",
+    "notes/xcode.md",
+    "notes/setup-matrix.md",
+    "notes/setup-computer.md"
+  ]
+}
