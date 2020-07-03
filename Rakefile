@@ -1,11 +1,19 @@
 require "pry"
 
-task :kindle_highlights, [:url] do |t, args|
-  url = args.fetch(:url)
+namespace :sync do
+  desc "Sync Kindle highlights from GoodReads"
+  task :good_reads, [:url] do |t, args|
+    url = args.fetch(:url)
 
-  notes = GoodReads::Notes.download(url)
-  s = notes.to_s.gsub(/â\u0080\u0099d/, ?')
-  puts s
+    notes = GoodReads::Notes.download(url)
+    s = notes.to_s.gsub(/â\u0080\u0099d/, ?')
+    puts s
+  end
+
+  namespace :recipe do
+    task :chef_steps
+    task :serious_eats
+  end
 end
 
 module GoodReads
