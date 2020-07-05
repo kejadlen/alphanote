@@ -105,7 +105,7 @@ module SeriousEats
       new(
         url,
         recipe.fetch("name"),
-        recipe.fetch("keywords").split(/,\s*/),
+        recipe.fetch("keywords").split(/,\s*/).map {|s| s.gsub(/\W+/, ?-) },
         {
           "Yield" => recipe.fetch("recipeYield"),
           "Active time" => active_time,
@@ -121,8 +121,7 @@ module SeriousEats
       <<~EOF
         ---
         tags:
-          - recipe
-        #{tags.map {|t| "  - #{t}" }.join("\n")}
+        #{%w[recipe].concat(tags).map {|t| "  - #{t}" }.join("\n")}
         ---
 
         ## [#{title}][serious-eats]
