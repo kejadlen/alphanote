@@ -1,18 +1,24 @@
 require "pry"
 
-namespace :sync do
-  desc "Sync Kindle highlights from GoodReads"
+namespace :download do
+  desc "Download Kindle highlights from GoodReads"
   task :good_reads, [:url] do |t, args|
     url = args.fetch(:url)
 
-    notes = GoodReads::Notes.download(url)
-    s = notes.to_s.gsub(/â\u0080\u0099d/, ?')
-    puts s
+    puts GoodReads::Notes
+      .download(url).to_s
+      .gsub(/â\u0080\u0099d/, ?')
   end
 
   namespace :recipe do
     task :chef_steps
-    task :serious_eats
+
+    desc "Download recipe from Serious Eats"
+    task :serious_eats, [:url] do |t, args|
+      url = args.fetch(:url)
+
+      puts SeriousEats::Recipe.download(url)
+    end
   end
 end
 
@@ -38,7 +44,7 @@ module GoodReads
           notes << Note.new(location, highlight, note)
         end
 
-        next_page = doc.at_xpath('//a[contains(@class, "next_page") and not(contains(@class, "disabled"))]')
+        next_page = doc.at_xpath("//a[contains(@class, 'next_page') and not(contains(@class, 'disabled'))]")
         break unless next_page
 
         href = URI(next_page["href"])
@@ -51,15 +57,15 @@ module GoodReads
     end
 
     def to_s
-      s = <<~EOF
-      ---
-      tags: [ book ]
-      ---
-      # #{title}
+      <<~EOF
+        ---
+        tags: [ book ]
+        ---
+        # #{title}
 
-      by #{author}
+        by #{author}
 
-      #{notes.map(&:to_s).join("\n\n")}
+        #{notes.map(&:to_s).join("\n\n")}
       EOF
     end
   end
@@ -70,6 +76,69 @@ module GoodReads
       s << "> #{highlight}" unless highlight.empty?
       s << "#{note}" unless note.empty?
       s.join("\n\n")
+    end
+  end
+end
+
+module SeriousEats
+  Recipe = Struct.new(:url, :title, :tags, :about, :ingredients, :directions) do
+    def self.download(url)
+      require "erb"
+      require "json"
+      require "nokogiri"
+      require "open-uri"
+      require "uri"
+
+      uri = URI(url)
+      doc = Nokogiri::HTML(uri.open, nil, "UTF-8")
+
+      linked_data = doc
+        .xpath("/html/head/script[@type='application/ld+json']")
+        .map(&:inner_text)
+        .map {|raw| JSON.parse(raw) }
+      recipe = linked_data.find {|json| json.fetch("@type") == "Recipe" }
+
+      about = doc.at_xpath("//ul[contains(@class, 'recipe-about')]")
+      active_time = about.at_xpath(".//span[text()='Active time:']/following-sibling::span").inner_text
+      total_time = about.at_xpath(".//span[text()='Total time:']/following-sibling::span").inner_text
+
+      new(
+        url,
+        recipe.fetch("name"),
+        recipe.fetch("keywords").split(/,\s*/),
+        {
+          "Yield" => recipe.fetch("recipeYield"),
+          "Active time" => active_time,
+          "Total time" => total_time,
+        },
+        recipe.fetch("recipeIngredient"),
+        recipe.fetch("recipeInstructions").map {|instruction| instruction.fetch("text") },
+      )
+    end
+
+    def to_s
+      # ERB.new(<<~EOF, trim_mode: "<>").result(binding)
+      <<~EOF
+        ---
+        tags:
+          - recipe
+        #{tags.map {|t| "  - #{t}" }.join("\n")}
+        ---
+
+        ## [#{title}][serious-eats]
+
+        [serious-eats]: #{url}
+
+        #{about.map {|k,v| "- #{k}: #{v}" }.join("\n")}
+
+        ### Ingredients
+
+        #{ingredients.map {|i| "- #{i}" }.join("\n")}
+
+        ### Directions
+
+        #{directions.map {|s| "1. #{s}" }.join("\n\n")}
+      EOF
     end
   end
 end
