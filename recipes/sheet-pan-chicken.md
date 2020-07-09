@@ -4,6 +4,15 @@ tags:
   - to-try
 ---
 
+# Sheet-Pan Chicken
+
+## 2020.07.05
+
+Scaled the recipe down to a quarter sheet pan, so one potato and the dark meat
+from one chicken. Used an onion since it's the allium we had on hand. Potatoes
+and chicken were great, but I would skip the sauce next time - it was more work
+than it was worth.
+
 ## [Sheet-Pan Chicken Thighs With Potatoes, Fennel, and Mustard-Beer Sauce Recipe][serious-eats]
 
 [serious-eats]: https://www.seriouseats.com/recipes/2020/01/sheet-pan-chicken-potato-fennel-gratin-dinner.html
