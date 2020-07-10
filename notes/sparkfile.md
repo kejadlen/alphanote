@@ -25,6 +25,9 @@ See also [[code-katas]]
 
 ## Programs
 
+- Mika(to)do
+- D(A)G editor
+- RSS feed for the new Far Side comics
 - Ceiling Cat
   - a la [selfspy](https://github.com/selfspy/selfspy)
 - git graph editor

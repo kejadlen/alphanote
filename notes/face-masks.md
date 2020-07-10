@@ -25,3 +25,4 @@ tags:
   - [Hedley & Bennett](https://www.hedleyandbennett.com/pages/wakeupandfightmask)
   - [Aplat](https://aplat.com/pages/aplat-cotton-face-mask)
   - [Madison Flitch](https://www.madisonflitch.com/shop/face-mask)
+  - [Mystery Ranch](https://www.mysteryranch.com/mystery-ranch-traditional-facemask)
