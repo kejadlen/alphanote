@@ -3,11 +3,13 @@ require "pry"
 namespace :download do
   desc "Download Kindle highlights from GoodReads"
   task :good_reads, [:url] do |t, args|
-    url = args.fetch(:url)
+    url = args.fetch(:url, `pbpaste`)
 
-    puts GoodReads::Notes
-      .download(url).to_s
-      .gsub(/â\u0080\u0099d/, ?')
+    require "yaml"
+
+    puts YAML.dump(
+      GoodReads::Notes.download(url).to_h.transform_keys(&:to_s)
+    )
   end
 
   namespace :recipe do
@@ -39,9 +41,16 @@ module GoodReads
       loop do
         doc.css("div.noteHighlightContainer").each do |node|
           location = node.css("div.noteHighlightContainer__location a").text
-          highlight = node.css("div.noteHighlightTextContainer__highlightText span").last.text
+          highlight = node.css("div.noteHighlightTextContainer__highlightText span").last.text rescue nil
           note = node.css("div.noteContainer__noteText").text
-          notes << Note.new(location, highlight, note)
+
+          highlight.gsub!(/â\u0080\u0099d/, ?')
+
+          notes <<
+            Note.new(location, highlight, note)
+              .to_h
+              .reject {|_,v| v.nil? || v.empty? }
+              .transform_keys(&:to_s)
         end
 
         next_page = doc.at_xpath("//a[contains(@class, 'next_page') and not(contains(@class, 'disabled'))]")
@@ -55,29 +64,9 @@ module GoodReads
 
       new(title, author, notes)
     end
-
-    def to_s
-      <<~EOF
-        ---
-        tags: [ book ]
-        ---
-        # #{title}
-
-        by #{author}
-
-        #{notes.map(&:to_s).join("\n\n")}
-      EOF
-    end
   end
 
-  Note = Struct.new(:location, :highlight, :note) do
-    def to_s
-      s = []
-      s << "> #{highlight}" unless highlight.empty?
-      s << "#{note}" unless note.empty?
-      s.join("\n\n")
-    end
-  end
+  Note = Struct.new(:location, :highlight, :note)
 end
 
 module SeriousEats
