@@ -42,9 +42,8 @@ module GoodReads
         doc.css("div.noteHighlightContainer").each do |node|
           location = node.css("div.noteHighlightContainer__location a").text
           highlight = node.css("div.noteHighlightTextContainer__highlightText span").last.text rescue nil
+          highlight&.gsub!(/â\u0080\u0099d/, ?')
           note = node.css("div.noteContainer__noteText").text
-
-          highlight.gsub!(/â\u0080\u0099d/, ?')
 
           notes <<
             Note.new(location, highlight, note)
