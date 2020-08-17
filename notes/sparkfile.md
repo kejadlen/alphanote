@@ -4,7 +4,7 @@ See also [[code-katas]]
 
 ## TODO
 
-- Implement plaintextaccounting
+- plaintextaccounting
   - [hledger](https://hledger.org/)
 
 ## Presentations

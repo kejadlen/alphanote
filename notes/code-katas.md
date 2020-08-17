@@ -2,12 +2,14 @@
 
 Ideas for self-improvement as a programmer.
 
-## Programs
+## Build
 
 - [Build Your Own Text Editor](http://viewsourcecode.org/snaptoken/kilo/index.html)
 - [Building Git](https://shop.jcoglan.com/building-git/)
 - [Let's Build a Web Browser](http://pavpanchekha.com/blog/emberfox/intro.html)
 - [Let's Build a Simple Database](https://cstack.github.io/db_tutorial/)
+- [Lambda calculus](https://www.andres-loeh.de/LambdaPi/LambdaPi.pdf)
+- [Minithesis](https://github.com/DRMacIver/minithesis)
 
 ## Courses
 
@@ -39,7 +41,7 @@ Ideas for self-improvement as a programmer.
 
 ## Languages
 
-- [Type-Driven Development with Idris](https://www.manning.com/books/type-driven-development-with-idris)
+- [Type-Driven Development with Idris][idris]
 - Elixir
 - Erlang
 - [The Little Schemer](https://mitpress.mit.edu/books/little-schemer)
@@ -52,7 +54,9 @@ Ideas for self-improvement as a programmer.
   - [Haskell Programming from First Principles][haskell-programming-from-first-principles]
 - Rust
   - [Learning Rust With Entirely Too Many Linked Lists][rust-linked-lists]
+- [J](https://code.jsoftware.com/wiki/Guides/Getting_Started)
 
+[idris]: https://www.manning.com/books/type-driven-development-with-idris
 [haskell-programming-from-first-principles]: https://ileriseviye.wordpress.com/2017/01/01/one-year-with-haskell-programming-from-first-principles/
 [rust-linked-lists]: http://cglab.ca/~abeinges/blah/too-many-lists/book/README.html
 

@@ -5,7 +5,17 @@ tags:
 
 # Face Masks
 
-- [MetaFilter](https://ask.metafilter.com/345973/Whats-the-best-mask)
+Recommendations from various sites/people.
+
+- [Sarah Taber](https://www.etsy.com/shop/FunkyFreshNoFogMasks)
+
+## Sea-Floor
+
+- [Starks](https://starks.com/products/face-masks/)
+- [Hedley & Bennett](https://www.hedleyandbennett.com/products/wake-up-and-fight-mask)
+
+## [MetaFilter](https://ask.metafilter.com/345973/Whats-the-best-mask)
+
   - [SpecialDesignsByG](https://www.etsy.com/shop/SpecialDesignsByG?listing_id=779589986&section_id=28457609)
     > I like that they are natural fiber, 2-layer, not pleated but nose-seamed,
       and flannel on the inside. The flannel liner is open on the sides, so you
