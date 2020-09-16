@@ -10,6 +10,7 @@ Ideas for self-improvement as a programmer.
 - [Let's Build a Simple Database](https://cstack.github.io/db_tutorial/)
 - [Lambda calculus](https://www.andres-loeh.de/LambdaPi/LambdaPi.pdf)
 - [Minithesis](https://github.com/DRMacIver/minithesis)
+- [Raft](https://chelseatroy.com/2019/12/20/the-raft-algorithm-what-why-and-how/)
 
 ## Courses
 
@@ -35,6 +36,7 @@ Ideas for self-improvement as a programmer.
 - [AVR Programming: Learning to Write Software for Hardware][avr-programming]
 - [What Every Computer Scientist Should Know About Floating-Point Arithmetic][floating-point]
 - [How to Design Programs](http://www.htdp.org/)
+- [Data Feminism](https://data-feminism.mitpress.mit.edu/)
 
 [avr-programming]: https://www.amazon.com/AVR-Programming-Learning-Software-Hardware/dp/1449355781
 [floating-point]: https://ece.uwaterloo.ca/~dwharder/NumericalAnalysis/02Numerics/Double/paper.pdf

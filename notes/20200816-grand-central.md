@@ -1,4 +1,16 @@
+---
+tags:
+  - restaurants
+---
+
 # Grand Central Bakery
+
+## 2020.09.05
+
+- **Cheddar Egg Biscuit**: A more manageable size than the PCC breakfast
+  biscuit, and better cheese as well.
+
+## 2020.08.16
 
 - **Cheddar Egg Biscuit**: Classic. We like to eat this as a half-biscuit and
   an open-faced sandwich.

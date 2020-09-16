@@ -13,13 +13,17 @@ namespace :download do
   end
 
   namespace :recipe do
-    task :chef_steps
+    task :chef_steps, [:url] do |t, args|
+      url = args.fetch(:url, `pbpaste`)
+
+      puts ChefSteps.download(url)
+    end
 
     desc "Download recipe from Serious Eats"
     task :serious_eats, [:url] do |t, args|
-      url = args.fetch(:url)
+      url = args.fetch(:url, `pbpaste`)
 
-      puts SeriousEats::Recipe.download(url)
+      puts SeriousEats.download(url)
     end
   end
 end
@@ -68,64 +72,154 @@ module GoodReads
   Note = Struct.new(:location, :highlight, :note)
 end
 
-module SeriousEats
-  Recipe = Struct.new(:url, :title, :tags, :about, :ingredients, :directions) do
-    def self.download(url)
-      require "erb"
-      require "json"
-      require "nokogiri"
-      require "open-uri"
-      require "uri"
+ChefSteps = Struct.new(:url, :raw) do
+  Step = Struct.new(:title, :directions)
 
-      uri = URI(url)
-      doc = Nokogiri::HTML(uri.open, nil, "UTF-8")
+  def tags
+    raw.fetch("tagList")
+  end
 
-      linked_data = doc
-        .xpath("/html/head/script[@type='application/ld+json']")
-        .map(&:inner_text)
-        .map {|raw| JSON.parse(raw) }
-      recipe = linked_data.find {|json| json.fetch("@type") == "Recipe" }
+  def title
+    raw.fetch("title")
+  end
 
-      about = doc.at_xpath("//ul[contains(@class, 'recipe-about')]")
-      active_time = about.at_xpath(".//span[text()='Active time:']/following-sibling::span").inner_text
-      total_time = about.at_xpath(".//span[text()='Total time:']/following-sibling::span").inner_text
+  def equipment
+    raw.fetch("equipment").map {|e| e.dig("equipment", "title") }
+  end
 
-      new(
-        url,
-        recipe.fetch("name"),
-        recipe.fetch("keywords").split(/,\s*/).map {|s| s.gsub(/\W+/, ?-) },
-        {
-          "Yield" => recipe.fetch("recipeYield"),
-          "Active time" => active_time,
-          "Total time" => total_time,
-        },
-        recipe.fetch("recipeIngredient"),
-        recipe.fetch("recipeInstructions").map {|instruction| instruction.fetch("text") },
-      )
-    end
+  def timing
+    raw.fetch("timing")
+  end
 
-    def to_s
-      # ERB.new(<<~EOF, trim_mode: "<>").result(binding)
-      <<~EOF
-        ---
-        tags:
-        #{%w[recipe].concat(tags).map {|t| "  - #{t}" }.join("\n")}
-        ---
+  def _yield
+    raw.fetch("yield")
+  end
 
-        ## [#{title}][serious-eats]
+  def ingredients
+    raw.fetch("ingredients").map {|i|
+      title, quantity, unit, note = i.fetch_values(*%w[ title quantity unit note ])
+      quantity = unit == "ea" ? quantity.to_i : quantity.to_f
+      out = ""
+      out << quantity.to_s << " " unless quantity.zero?
+      out << title
+      out << ", " << note unless note.empty?
+      out << ", as needed" if unit == "a/n"
+      out
+    }
+  end
 
-        [serious-eats]: #{url}
+  def steps
+    raw.fetch("steps")
+      .reject {|s| s.fetch("isAside") || s.fetch("hideNumber") }
+      .map {|s| Step.new(*s.fetch_values("title", "directions")) }
+  end
 
-        #{about.map {|k,v| "- #{k}: #{v}" }.join("\n")}
+  def to_s
+    require "erb"
+    ERB.new(<<~EOF, trim_mode: "<>").result(binding)
+      ---
+      tags:
+      <% tags.each do |tag| %>
+        - <%= tag %>
+      <% end %>
+      ---
 
-        ### Ingredients
+      ## [<%= title %>][chef-steps]
 
-        #{ingredients.map {|i| "- #{i}" }.join("\n")}
+      [chef-steps]: <%= url %>
 
-        ### Directions
+      - Equipment:
+      <% equipment.each do |equipment| %>
+        - <%= equipment %>
+      <% end %>
+      - Timing: <%= timing %>
+      - Yield: <%= _yield %>
 
-        #{directions.map {|s| "1. #{s}" }.join("\n\n")}
-      EOF
-    end
+      ### Ingredients
+
+      <% ingredients.each do |ingredient| %>
+      - <%= ingredient %>
+      <% end %>
+
+      ### Directions
+
+      <% steps.each do |step| %>
+      1. <%= step.title %>
+
+      <%= step.directions.split("\n\n").map {|d| "  \#{d}" }.join("\n\n") %>
+
+
+      <% end %>
+    EOF
+  end
+
+  def self.download(url)
+    require "json"
+    require "open-uri"
+    require "uri"
+
+    uri = URI(url)
+    uri.path = File.join("/api/v0", uri.path)
+    json = JSON.parse(uri.open.read)
+    new(url, json)
   end
 end
+
+SeriousEats = Struct.new(:url, :title, :tags, :about, :ingredients, :directions) do
+  def to_s
+    <<~EOF
+      ---
+      tags:
+      #{%w[recipe].concat(tags).map {|t| "  - #{t}" }.join("\n")}
+      ---
+
+      ## [#{title}][serious-eats]
+
+      [serious-eats]: #{url}
+
+      #{about.map {|k,v| "- #{k}: #{v}" }.join("\n")}
+
+      ### Ingredients
+
+      #{ingredients.map {|i| "- #{i}" }.join("\n")}
+
+      ### Directions
+
+      #{directions.map {|s| "1. #{s}" }.join("\n\n")}
+    EOF
+  end
+
+  def self.download(url)
+    require "json"
+    require "nokogiri"
+    require "open-uri"
+    require "uri"
+
+    uri = URI(url)
+    doc = Nokogiri::HTML(uri.open, nil, "UTF-8")
+
+    linked_data = doc
+      .xpath("/html/head/script[@type='application/ld+json']")
+      .map(&:inner_text)
+      .map {|raw| JSON.parse(raw) }
+    recipe = linked_data.find {|json| json.fetch("@type") == "Recipe" }
+
+    about = doc.at_xpath("//ul[contains(@class, 'recipe-about')]")
+    active_time = about.at_xpath(".//span[text()='Active time:']/following-sibling::span").inner_text
+    total_time = about.at_xpath(".//span[text()='Total time:']/following-sibling::span").inner_text
+
+    new(
+      url,
+      recipe.fetch("name"),
+      recipe.fetch("keywords").split(/,\s*/).map {|s| s.gsub(/\W+/, ?-) },
+      {
+        "Yield" => recipe.fetch("recipeYield"),
+        "Active time" => active_time,
+        "Total time" => total_time,
+      },
+      recipe.fetch("recipeIngredient"),
+      recipe.fetch("recipeInstructions").map {|instruction| instruction.fetch("text") },
+    )
+  end
+end
+

@@ -8,6 +8,7 @@ tags:
 Recommendations from various sites/people.
 
 - [Sarah Taber](https://www.etsy.com/shop/FunkyFreshNoFogMasks)
+- [Prana](https://www.prana.com/p/prana-reversible-face-mask---3-pack/U51201734.html)
 
 ## Sea-Floor
 
@@ -36,3 +37,8 @@ Recommendations from various sites/people.
   - [Aplat](https://aplat.com/pages/aplat-cotton-face-mask)
   - [Madison Flitch](https://www.madisonflitch.com/shop/face-mask)
   - [Mystery Ranch](https://www.mysteryranch.com/mystery-ranch-traditional-facemask)
+
+## Other
+
+- [Outdoor Research](https://www.outdoorresearch.com/us/face-mask)
+- [Tom Bihn V4](https://www.tombihn.com/collections/facemasks/products/v4mask?variant=32762416988223)
