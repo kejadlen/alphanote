@@ -1,0 +1,937 @@
+---
+title: 'How Buildings Learn: What Happens After They''re Built'
+author: Stewart Brand
+notes:
+- location: 3%
+  highlight: Almost no buildings adapt well. They’re designed not to adapt; also budgeted
+    and financed not to, constructed not to, administered not to, maintained not to,
+    regulated and taxed not to, even remodeled not to. But all buildings (except monuments)
+    adapt anyway, however poorly, because the usages in and around them are changing
+    constantly.
+- location: 4%
+  highlight: In wider use, the term “architecture” always means “unchanging deep structure.”
+    It is an illusion. New usages persistently retire or reshape buildings.
+- location: 4%
+  highlight: The word “building” contains the double reality. It means both “the action
+    of the verb BUILD” and “that which is built”—both verb and noun, both the action
+    and the result. Whereas “architecture” may strive to be permanent, a “building”
+    is always building and rebuilding. The idea is crystalline, the fact fluid. Could
+    the idea be revised to match the fact?
+- location: 4%
+  highlight: "“Form ever follows function.” Written in 1896 by Louis Sullivan, the
+    Chicago highrise designer,"
+- location: 4%
+  highlight: Winston Churchill’s “We shape our buildings, and afterwards our buildings
+    shape us.”
+- location: 4%
+  highlight: First we shape our buildings, then they shape us, then we shape them
+    again—ad infinitum. Function reforms form, perpetually.
+- location: 4%
+  highlight: BUILDINGS TELL STORIES, if they’re allowed—if their past is flaunted
+    rather than concealed.
+- location: 4%
+  highlight: Deterioration is constant, in new buildings as much as old.
+- location: 5%
+  highlight: Buildings keep being pushed around by three irresistible forces—technology,
+    money, and fashion.
+- location: 5%
+  highlight: The march of technology is inexorable, and accelerating.
+- location: 5%
+  highlight: Form follows funding.
+- location: 5%
+  highlight: As for fashion, it is change for its own sake—
+- location: 5%
+  highlight: commercial, domestic, and institutional.
+- location: 5%
+  highlight: Commercial buildings are forever metamorphic.
+- location: 5%
+  highlight: Domestic buildings—homes—are the steadiest changers, responding directly
+    to the family’s ideas and annoyances, growth and prospects.
+- location: 5%
+  highlight: Institutional buildings act as if they were designed specifically to
+    prevent change for the organization inside and to convey timeless reliability
+    to everyone outside. When forced to change anyway, as they always are, they do
+    so with expensive reluctance and all possible delay. Institutional buildings are
+    mortified by change.
+- location: 6%
+  highlight: A FIX BECOMES A FEATURE. Add-ons often become a distinctive part of a
+    generic building type.
+  note: We see this a lot with patterns blindly applied across codebases even when
+    the original reasons have long since stopped being applicable.
+- location: 6%
+  highlight: There is a universal rule—never acknowledged because its action is embarrassing
+    or illegal. All buildings grow.
+- location: 6%
+  highlight: "“What makes a building come to be loved?” A thirteen-year-old boy in
+    Maine had the most succinct answer. “Age,”"
+  note: This is one big difference with code.
+- location: 6%
+  highlight: Things should not be new, but neither should they be rotten with age
+    (except in New Orleans, which fosters a cult of decay).
+- location: 6%
+  highlight: Some work invites you into itself by not offering a finished, glossy,
+    one-reading-only surface. This is what makes old buildings interesting to me.
+- location: 7%
+  highlight: Architects and interior designers revile and battle each other.
+- location: 7%
+  highlight: Gradually the magazine noticed that its affluent readers rebuilt interiors
+    much more often than they built houses.
+- location: 7%
+  highlight: different parts of buildings change at different rates.
+- location: 7%
+  highlight: The leading theorist—practically the only theorist—of change rate in
+    buildings is Frank Duffy,
+- location: 7%
+  highlight: building properly conceived is several layers of longevity of built components.”
+    He distinguishes four layers, which he calls Shell, Services, Scenery, and Set.
+- location: 7%
+  highlight: Over fifty years, the changes within a building cost three times more
+    than the original building.
+- location: 8%
+  highlight: "“The dynamics of the system will be dominated by the slow components,
+    with the rapid components simply following along.”2 Slow constrains quick; slow
+    controls quick."
+- location: 9%
+  highlight: The quick processes provide originality and challenge, the slow provide
+    continuity and constraint.
+- location: 9%
+  highlight: Small lots will support resilience because they allow many people to
+    attend directly to their needs by designing, building, and maintaining their own
+    environment.
+- location: 9%
+  highlight: And many property owners slow down the rate of change by making large-scale
+    real estate transactions difficult.
+- location: 9%
+  highlight: Otis Elevator contractors don’t bother to make money on their first installation.
+- location: 9%
+  highlight: Energy Services such as electricity and gas are driven constantly toward
+    greater efficiency by their sheer expense—30 percent of operating costs, equal
+    over a building’s life to the entire original cost of construction.
+- location: 9%
+  highlight: An adaptive building has to allow slippage between the differently-paced
+    systems of Site, Structure, Skin, Services, Space plan, and Stuff.
+- location: 9%
+  highlight: Embedding the systems together may look efficient at first, but over
+    time it is the opposite, and destructive as well.
+- location: 10%
+  highlight: "“Things that are good have a certain kind of structure,” he told me.
+    “You can’t get that structure except dynamically. Period. In nature you’ve got
+    continuous very-small-feedback-loop adaptation going on, which is why things get
+    to be harmonious. That’s why they have the qualities that we value."
+- location: 10%
+  highlight: "“What does it take to build something so that it’s really easy to make
+    comfortable little modifications in a way that once you’ve made them, they feel
+    integral with the nature and structure of what is already there? You want to be
+    able to mess around with it and progressively change it to bring it into an adapted
+    state with yourself, your family, the climate, whatever."
+- location: 11%
+  highlight: But only sometimes are additions an improvement.
+- location: 11%
+  highlight: Age plus adaptivity is what makes a building come to be loved. The building
+    learns from its occupants, and they learn from it.
+- location: 11%
+  highlight: domus referred not only to the walls but also to the people within them.
+  note: Programming as theory building
+- location: 11%
+  highlight: "“Oh, old ones,” he said. “They are much more freeing.”"
+  note: Interesting in light of One Apple Park
+- location: 11%
+  highlight: Any change is likely to be an improvement.
+- location: 12%
+  highlight: elegant because it is quick and dirty.
+- location: 12%
+  highlight: "“We feel our space is really ours. We designed it, we run it. The building
+    is full of small microenvironments, each of which is different and each a creative
+    space. Thus the building has a lot of personality. Also it’s nice to be in a building
+    that has such prestige.”"
+- location: 13%
+  highlight: Temporary is permanent, and permanent is temporary. Grand, final-solution
+    buildings obsolesce and have to be torn down because they were too overspecified
+    to their original purpose to adapt easily to anything else.
+- location: 13%
+  highlight: Old ideas can sometimes use new buildings. New ideas must come from old
+    buildings.
+- location: 14%
+  highlight: What do people do to buildings when they can do almost anything they
+    want?
+- location: 14%
+  highlight: Low Road buildings are peculiarly empowering.
+  note: I.e., old-fashioned webpages where the source is exposed and easy to read.
+- location: 15%
+  highlight: It has all been done by the confident dictators of yesteryear, with no
+    recourse to committees or wondering what other people will think about their additions
+    and subtractions.
+- location: 15%
+  highlight: Such agglomerations become highly evolved, refinement added to refinement
+    (“The bridge is at a comfortable angle”), the sensible parts kept, the humorous
+    parts kept, the clever idea that didn’t work thrown away, the overambitious conservatory
+    torn down, the loved view carefully maintained, until the aggregate is all finesse
+    and eccentricity. The measure of successful evolution is intricate vivacity.
+- location: 15%
+  highlight: Occupants in a lean time can be crushed by trying to maintain what was
+    built in fat times.
+- location: 16%
+  highlight: The High Road is high-visibility, often high-style, nearly always high-cost.
+- location: 16%
+  highlight: Low Road buildings are successively gutted and begun anew, High Road
+    buildings are successively refined.
+- location: 16%
+  highlight: "“r-strategy” versus “K-strategy”"
+- location: 16%
+  highlight: Would Washington have known how to make the piazza so amenable if he
+    hadn’t lived in the house for fourteen years first?
+  note: Not a lot of software has this contributor history.
+- location: 17%
+  highlight: Most owner-builders take inordinate lengths of time to complete their
+    projects; Jefferson took fifty-four years. Many owner-builders construct dwellings
+    larger than necessary; Jefferson, a widower, built a thirty-five-room mansion.
+    Owner-builders invariably extemporize as they build, adding to and modifying their
+    original design as the house grows. Jefferson built one house, tore much of it
+    down, doubled its size, and continued to alter, remodel, improve, and add to it
+    for decades. It is a wonder that the house was ever finally completed; many thought
+    it never would be.
+  note: This feels familiar.
+- location: 18%
+  highlight: The building tries to stand for the function instead of serving it.
+- location: 18%
+  highlight: Military buildings are rich, not in money, but in people with time to
+    work on them.
+- location: 18%
+  highlight: A frozen bureaucracy and a frozen building reinforce each other’s resistance
+    to change. Change is obligatory, since bureaucracies always grow, but responsibility
+    is dispersed and delayed in a maze of anxious responsibility-avoidance, and the
+    building sits heavy and inert. Near any institutional building more than a decade
+    old, you are likely to find a host of clumsy Low Road expediencies—trailers, temporary
+    add-ons, people working in windowless storage rooms, space rented in nearby commercial
+    buildings.
+- location: 18%
+  highlight: "“There’s a huge lag time between when you need something and when you
+    actually get it."
+- location: 18%
+  highlight: Because it is not allowed to anticipate its growth realistically, this
+    superb institution barely functions.
+- location: 18%
+  highlight: compact shelving
+  note: So that’s what it’s called!
+- location: 20%
+  highlight: MOST BUILDINGS have neither High Road nor Low Road virtues. Instead they
+    strenuously avoid any relationship whatever with time and what is considered its
+    depredation.
+- location: 21%
+  highlight: How did architects come to be such an obstacle to adaptivity in buildings?
+- location: 21%
+  highlight: "“The problem with architects,” he rasped, “is they think they’re artists,
+    and they’re not very competent.”"
+- location: 21%
+  highlight: 'The problems of “art” as architectural aspiration come down to these:
+    • Art is proudly non-functional and impractical. • Art reveres the new and despises
+    the conventional. • Architectural art sells at a distance.'
+- location: 21%
+  highlight: Architect Peter Calthorpe maintains that many of the follies of his profession
+    would vanish if architects simply decided that what they do is craft instead of
+    art.
+- location: 21%
+  highlight: "“If a pleasure-giving function predominates, the artifact is called
+    art; if a practical function pred..."
+- location: 21%
+  highlight: Craft is something useful made with artfulness, with close a...
+- location: 21%
+  highlight: Convention became conventional because it works.
+- location: 21%
+  highlight: Tales were told of ambitious architects specifically designing their
+    buildings to photograph well at the expense of performing well.
+- location: 22%
+  highlight: Teachers began to talk of the need for “loose fit” in designing buildings,
+    so that unexpected uses of the building could be accommodated.
+- location: 22%
+  highlight: Chris Alexander and colleagues came up with their “pattern language”
+    of design elements that wear well.
+- location: 22%
+  highlight: All that effort goes into impressing the wrong people—passers-by instead
+    of the people who use the building.
+  note: 'Software analogy insight: software architects design for the business and
+    to impress other architects, but not for the actual inhabitants of the code -
+    the dev team.'
+- location: 24%
+  highlight: The contractor passes 80 percent of the work to subcontractors. They
+    are often the ones with the cutting-edge technical skills, but they are too far
+    downstream to affect design. Once the building is finished, it is turned over
+    to facilities managers who will actually run the building. They of course have
+    had no hand in its design.
+  note: 'Elided: architect-> engineers -> general contractor.'
+- location: 24%
+  highlight: The Japanese design-build methodology has developed to such efficiency
+    that some highrises have construction begun on their base before the top is completely
+    designed—“just-in-time” design.
+- location: 24%
+  highlight: Clients often are no better at representing building users than architects
+    are. Usually a building is so large and complex an undertaking that the “stakeholders”
+    are too diverse, scattered, and at odds to agree on much of anything.
+- location: 24%
+  highlight: Major design decisions wind up being made semi-randomly by the lawyer
+    because no one is crisply in charge.
+- location: 24%
+  highlight: The percent approach is a conflict of interest for the architect;
+- location: 24%
+  highlight: What is punished by claims is any kind of adaptivity during construction—
+- location: 25%
+  highlight: The simultaneous seizing of power and shedding of responsibility by contractors
+    puts the onus on architects to anticipate perfectly all of a building’s needs.
+    Nothing is left to the builders, to the client, or to actual usage.
+- location: 25%
+  highlight: All the design intelligence gets forced to the earliest part of the building
+    process, when everyone knows the least about what is really needed.
+- location: 25%
+  highlight: Chris Alexander likes to make on-site adjustment to a building as it’s
+    being constructed. “Architects are supposed to be good visualizers, and we are,”
+    he says, “but still, most of the time we’re wrong. Even when you build the things
+    yourself and you’re doing good, you’re still making nine mistakes for every success.
+    So you take the time to correct them. The more at each stage you can approach
+    being able to experience the contemplated reality, the more it will give you feedback
+    and you’ll be able to intelligently develop it.”
+- location: 25%
+  highlight: "“Architects think of a building as a complete thing, while builders
+    think of it and know it as a sequence—hole, then foundation, framing, roof, etc.
+    The separation of design from making has resulted in a built environment that
+    has no ‘flow’ to it—you simply cannot design an improvisation or an adaptation.
+    It’s dead.”"
+- location: 25%
+  highlight: The race for finality undermines the whole process. In reality, finishing
+    is never finished, but the building is designed and constructed with fiendish
+    thoroughness to deny that.
+- location: 25%
+  highlight: "“post-occupancy evaluation” (POE)"
+- location: 25%
+  highlight: Why not just “use-evaluation,” since that’s what it is?
+- location: 26%
+  highlight: "“We believe you should go back three times. You should do it with the
+    people who are going to use the building six weeks before it opens, to record
+    their expectations. That gives you a very interesting base. You should go back
+    within the first six months, when they’re still fresh on the place and really
+    feeling all the uneasy elements. Then you should go back about two years later,
+    after they’ve accommodated themselves to the building. It would be wonderful to
+    do a fourth one maybe ten years later, because by then the world has changed.
+    Has your building been able to accommodate that change?”"
+- location: 26%
+  highlight: "“The fundamental reason is: the difficulty of putting buildings up is
+    so great, and the pressures of getting it right on the night are so enormous,
+    that squeezes out concern for the user and it squeezes out concern for time."
+- location: 26%
+  highlight: In the 1980s, malpractice lawsuits against architects surpassed those
+    against doctors.
+- location: 26%
+  highlight: Legal action is a hugely inefficient method of failure analysis.
+- location: 27%
+  highlight: The field of architecture takes its counsel from two main sources—architecture
+    schools and architecture magazines—both of which deliberately isolate themselves
+    from the real sources of feedback on building performance—lawyers and developers.
+- location: 27%
+  highlight: "“I prefer a one-story responsive wood building to a ten-story extremely
+    inflexible concrete one."
+- location: 27%
+  highlight: They focus obsessively on visual skills such as rendering, models, plans,
+    and photography. Sight substitutes for insight.
+- location: 28%
+  highlight: We need to honor buildings that are loved rather than merely admired.
+    Admiration is from a distance and brief, while love is up close and cumulative.
+- location: 28%
+  highlight: The needed conversion is from architecture based on image to architecture
+    based on process.
+- location: 28%
+  highlight: Architecture should offer an incentive to its users to influence it wherever
+    possible, not merely to reinforce its identity, but more especially to enhance
+    and affirm the identity of its users.”
+- location: 29%
+  highlight: "“Rushing is at the root of all lack of quality.”"
+- location: 29%
+  highlight: Every building leads three contradictory lives—as habitat, as property,
+    and as component of the surrounding community.
+- location: 29%
+  highlight: Is your house primarily a home or primarily an asset?
+- location: 29%
+  highlight: Seeking to be anybody’s house it becomes nobody’s.
+- location: 29%
+  highlight: The overall rule is always “Fit in.” It is never “Become interesting.”
+- location: 29%
+  highlight: As a youth I regarded building codes as the embodiment of all that was
+    unoriginal and constricting in society. Later I learned their value.
+- location: 29%
+  highlight: "“Earthquakes don’t kill people. Buildings do.”"
+- location: 29%
+  highlight: Most building code systems are a manifestation of the whole community
+    learning.
+- location: 29%
+  highlight: The codes often force builders and dwellers to act against their short-term
+    interests,
+- location: 29%
+  highlight: This is an old and interesting problem in organizational learning. How
+    do people learn to do cheap problem-prevention instead of expensive problem-cure?
+- location: 30%
+  highlight: codes established minimal standards, and minimal standards sanctify mediocrity.
+    Mediocre builders can undersell good builders.
+- location: 30%
+  highlight: At their worst, code enforcers block creativity and defy reason, answerable
+    to remote abstractions that have nothing to do with the present case or opportunity.
+- location: 30%
+  highlight: One of the major features of the ongoing life of any building is the
+    hide-and-seek between remodelers, both amateur and professional, and the enforcers
+    of codes—the building inspectors.
+- location: 30%
+  highlight: The result is a mixed bag. Certainly more constant adjustment to buildings
+    comes from all this informality, but every carpenter I’ve talked to complains
+    that the thing they most dread in any remodeling job is shoddy prior work done
+    on the sly and not up to code—“cob work done by some handyman.” They contract
+    to fix a warped bathroom floor and find they have to completely redo the plumbing,
+    wiring, walls, and floor joists because earlier slapdash work put in hazardous
+    wiring and leaky, rot-producing pipes.
+- location: 30%
+  highlight: Communities that want their built environment to improve over time would
+    do well not to punish remodeling work.
+- location: 30%
+  highlight: Small lots give greater individual control and thus greater variety,
+    and they encourage more pedestrian activity.
+- location: 31%
+  highlight: Garreau defines master planning there as “that attribute of a development
+    in which so many rigid controls are put in place, to defeat every imaginable future
+    problem, that any possibility of life, spontaneity, or flexible response to unanticipated
+    events is eliminated.”
+- location: 31%
+  highlight: American planners always take inspiration from Europe’s great cities
+    and such urban wonders as the Piazza San Marco in Venice, but they study the look,
+    never the process.
+- location: 31%
+  highlight: That is the essence of good urban design—respect for what came before.”
+- location: 31%
+  highlight: Quelling change, zoning quells life.
+- location: 32%
+  highlight: What makes homeowners’ associations so viciously conservative?
+- location: 32%
+  highlight: "(Americans move every eight years, on average),"
+- location: 32%
+  highlight: This degree of institutionalization of real estate value over use value
+    is odious enough as an invasion of privacy, but it also prevents buildings from
+    exercising their unique talent for getting better with time.
+  note: Is consistency at odds with innovation?
+- location: 32%
+  highlight: Any improvements made are for the imaginary next buyers, not themselves.
+- location: 33%
+  highlight: 'Thus they insist on blitzkrieg construction schedules, and then they
+    shovel in the tenants to get some rent flowing. The result: instant, shallow,
+    flashy buildings with no adaptivity and no investment for the long term.'
+- location: 33%
+  highlight: "“The money is wrong in most buildings, and it’s crucial. There should
+    be more in basic structure, less in finish, more in maintenance and adaptation.
+    Once a building heads downhill, you lose motivation to fix it. You have to maintain
+    a steady flow of money into a building, and mortgages skim that.”"
+- location: 34%
+  highlight: In Japan and Germany—nations highly regarded and highly rewarded for
+    taking the long view—mortgages are commonly written to amortize over 100 years.
+- location: 34%
+  highlight: Japan further discourages commoditization of houses with tax laws that
+    punish rapid purchase and sale.
+- location: 34%
+  highlight: Two out of every three dollars spent on the purchase of the building
+    go into paying interest—
+- location: 34%
+  highlight: The building can’t learn much with all those shock treatments.
+- location: 34%
+  highlight: Nearly everything about real estate estranges buildings from their users
+    and interrupts any form of sustained continuity.
+- location: 34%
+  highlight: The “real” in “real estate” derives from re-al—“royal”—rather than from
+    res—“thing”—which is the root of “reality.”
+- location: 34%
+  highlight: a dollar gains its time-and-space binding power from having no history,
+    and the dollar wins.
+- location: 34%
+  highlight: Monetization frees from history by destroying history.
+- location: 34%
+  highlight: The opposite strategy is much surer, because the errors are piecemeal
+    and correctable. When you proceed deliberately, mistakes don’t cascade, they instruct.
+- location: 34%
+  highlight: "‘oikonomia’"
+- location: 34%
+  highlight: "‘chrematistics.’"
+- location: 34%
+  highlight: Oikonomia, by contrast, is the management of the household so as to increase
+    its use value to all members of the household over the long run.”
+- location: 36%
+  highlight: Since few buildings live so long, it has earned the stature of rarity
+    and the respect we give longevity.
+  note: Not really the case for codebases.
+- location: 37%
+  highlight: Rehabilitation of an old building may be expensive, but it’s still significantly
+    less than comparable new construction.
+- location: 37%
+  highlight: The rehab work often can proceed by stages, while part of the building
+    is still profitably occupied, and it can take less time than new construction.
+- location: 39%
+  highlight: "“FACADISM” is the dirty word preservationists use for projects that
+    save the illusory fronts of old buildings to mask entirely new construction."
+- location: 40%
+  highlight: 'The Improviser’s Standards would read: “Mess with the building as needed
+    until it works.”)'
+- location: 41%
+  highlight: When a building designed for one purpose is put to a completely different
+    use, its value deepens,
+- location: 41%
+  highlight: Where does that leave design truisms like “Form follows function”? Completely
+    invalidated.
+- location: 42%
+  highlight: preservationists encourage the leaving of “hidden treasures” for later
+    remodelers to find,
+- location: 43%
+  highlight: Adaptive use is the destiny of most buildings, but the subject is not
+    taught in architectural schools.
+- location: 43%
+  highlight: 'The subject would not be how to make new buildings look like old ones.
+    It would be: how to design new buildings that will endear themselves to preservationists
+    sixty years from now.'
+- location: 43%
+  highlight: The wisdom acquired looking backward must be translated into wisdom looking
+    forward.
+- location: 44%
+  highlight: No wonder people get in a permanent state of denial about the need for
+    building maintenance. It is all about negatives, never about rewards. Doing it
+    is a pain. Not doing it can be catastrophic. A constant draining expense, it never
+    makes money. You could say it does save money in the long run, but even that is
+    a negative because you never see the saving in any accountable way.
+- location: 44%
+  highlight: "“Preservation IS maintenance.”"
+- location: 44%
+  highlight: The sequence of effects of deterioration on ordinary buildings has never
+    been formally studied—a curious lapse, considering the massive capital loss involved—
+- location: 44%
+  highlight: Most buildings you can expect to require complete refurbishing from eleven
+    to twenty-five years after construction.
+- location: 45%
+  highlight: An empty building rots fast and attracts trouble.
+- location: 45%
+  highlight: Since the downward spiral of dilapidation can accelerate so quickly,
+    the trick is to keep a building from entering the spiral at all. Two methods are
+    supposedly standard, but both are in practice somewhat rare.
+- location: 45%
+  highlight: One is “preventive maintenance”—
+- location: 45%
+  highlight: The other is designing and constructing the building in such a way that
+    it doesn’t need a lot of maintenance.
+- location: 45%
+  highlight: Building maintenance has little status with architects. They see the
+    people who do the maintaining as blue-collar illiterates and the process of upkeep
+    as trivial, not a part of design concerns.
+- location: 45%
+  highlight: "“a staggering one-fifth of the sample said that the need to clean their
+    windows had not even been considered during the design and construction of the
+    building.”"
+- location: 45%
+  highlight: Incompetent design often is matched by hurried, shoddy construction,
+    which can be concealed or can get by on being just good enough, just long enough.
+- location: 45%
+  highlight: "“The older a building, the more likely it is to be right. Since the
+    1970s, buildings don’t work.”"
+- location: 45%
+  highlight: European families think in generations while Americans are still trying
+    to master decades.
+- location: 45%
+  highlight: The longer that buildings are expected to last, the more you can expect
+    maintenance and other running costs to overwhelm the initial capital costs of
+    construction, and the more inclined owners will be to invest in better construction
+    so they can spend less on maintenance.
+  note: How long is software expected to last?
+- location: 46%
+  highlight: The worst of it is, when water comes through a flat roof, you can’t tell
+    where the leak is
+- location: 46%
+  highlight: Washington left abundant (if often angry) correspondence about what he
+    wanted for the building because he expanded the house while battling the British.
+  note: Kind of funny to think about the banality of normal life even while fighting
+    a war.
+- location: 47%
+  highlight: Like people, buildings would have far fewer upkeep problems if they had
+    no orifices.
+- location: 47%
+  highlight: 'The question is this: do you want a material that looks bad before it
+    acts bad, like shingles or clapboard, or one that acts bad long before it looks
+    bad, like vinyl siding?'
+- location: 47%
+  highlight: Remodelers love shingled and tile-hung walls because changes are so easy
+    to make and then hide.
+  note: Design for replacement.
+- location: 47%
+  highlight: Maintenance is no mystery.
+- location: 47%
+  highlight: New materials are unproven, by definition. Like most experiments, they
+    tend to fail.
+- location: 47%
+  highlight: Redundancy of function is always more reliable than attempts at perfection,
+- location: 47%
+  highlight: The Sydney Opera House, one of the most memorable buildings built during
+    this century, was finished in 1973 at a cost of $120 million, with a cost overrun
+    of roughly 1,700 percent.
+- location: 47%
+  highlight: The materials are often one-offs that would take a whole industry to
+    reproduce, and the failures can be massive.
+- location: 49%
+  highlight: walls, it appears, are better if they’re low-maintenance rather than
+    no-maintenance.
+- location: 49%
+  highlight: Wood and brick walls invite change by involving us in their upkeep. What
+    begins as repair easily becomes improvement—
+- location: 49%
+  highlight: "“It’s one thing with a building if it’s going downhill and you know
+    you can fix it and bring it into a perfect state, but if it’s generally starting
+    to go downhill, and you know that it’s not going to last more than thirty years,
+    then the motivation is not there."
+- location: 50%
+  highlight: If that small stuff isn’t happening all the time, you’re not going to
+    take care of it, and it isn’t going to come to order.”
+- location: 50%
+  highlight: "“Large-lump development is based on the idea of replacement. Piecemeal
+    growth is based on the idea of repair."
+- location: 50%
+  highlight: Large-lump development is based on the fallacy that it is possible to
+    build perfect buildings. Piecemeal growth is based on the healthier and more realistic
+    view that mistakes are inevitable….
+- location: 50%
+  highlight: Maintenance, in this light, is learning.
+- location: 50%
+  highlight: feed it money, but not too much and not too little. Too much encourages
+    orgies of radical remodeling that blow a building’s continuity and integrity.
+    Too little, and a building becomes destructive to itself and the people in it.
+- location: 50%
+  highlight: As-builts are building plans that show in detail exactly what was built,
+    which is always significantly different from what was in the original plans.
+- location: 50%
+  highlight: "‘The more complicated the system the greater the chance of things going
+    wrong.”’"
+- location: 51%
+  highlight: I’d like to see building designers take on problem transparency as a
+    design goal.
+- location: 51%
+  highlight: Once attention is deferred, deferring of maintenance comes naturally.
+    It might be better if some of the original work were intentionally ephemeral,
+    with everyone knowing it will require maintenance or replacement within a year.
+    “How might a new building teach good maintenance habits?” is a question worth
+    giving to architecture students.
+- location: 51%
+  highlight: Maintenance comes in two major flavors, especially around houses—cosmetic
+    and real. Unfortunately the cosmetic is more fun.
+- location: 51%
+  highlight: Or be sure that any repair includes the reward of some improvement.
+  note: I.e., never refactor just for its own sake.
+- location: 52%
+  highlight: The existence of plans on paper is an indicator of cultural weakening.
+    The amount of detail in a plan is an exact measure of the degree of cultural disharmony;
+    the more minimal the plan, the more completely the architectural idea abides in
+    the separate minds of architect and client.1
+- location: 52%
+  highlight: Vernacular builders, he says, are content to accept well-proven old solutions
+    to old problems. Then they can concentrate all their design ingenuity strictly
+    on new problems, if any.
+- location: 53%
+  highlight: no two communities dwell alike.
+- location: 53%
+  highlight: Each person becomes a vernacular builder and a vernacular speaker by
+    growing up, by moving from one initiation to the next in becoming either a male
+    or a female inhabitant.
+- location: 54%
+  highlight: Vernacular building historians excel at “reading” buildings—analyzing
+    the physical evidence of what actually happened in a building, and when, and why.
+- location: 54%
+  highlight: they are universally expert at growing by stages.
+- location: 54%
+  highlight: Style is the last thing that I would teach a student about architectural
+    history, because it’s so misleading.
+- location: 58%
+  highlight: native adaptivity got left behind when vernacular form was translated
+    into “vernacular” style.
+- location: 58%
+  highlight: Specialized knowledge distances buildings from users. Specialized space
+    hinders future flexibility.
+- location: 59%
+  highlight: That’s why 10 percent of all houses in America are mobile homes, housing
+    12.5 million people. In 1985, mobile homes comprised one-fifth of all new houses
+    sold in the US, and two-thirds of all new low-cost single-family houses.
+- location: 60%
+  highlight: Builders of would-be popular buildings do better when they learn from
+    folklore than when they ape the elite.
+- location: 61%
+  highlight: the constant change in homes and offices is usually done by the occupants
+    in a manner classically vernacular—informal, pragmatic, alive with offhand ingenuity,
+    officially invisible. Direct, amateur change is the norm.
+- location: 62%
+  highlight: Too eager to please the moment, over-specificity crippled all future
+    moments.
+- location: 62%
+  highlight: The credo “form follows function” was a beautiful lie. Form froze function.
+- location: 64%
+  highlight: It’s a good example of the destructive power of money and of the way
+    differently paced parts of a building can tear at each other.
+- location: 64%
+  highlight: "“Every house is a work in progress,”"
+- location: 64%
+  highlight: To tinker with a house is to commune with the people who have lived in
+    it before and to leave messages for those who will live in it later.
+- location: 64%
+  highlight: "“finishing is never finished.” There are several reasons for that. You’re
+    down to detail, and details are endless."
+- location: 64%
+  highlight: Also you’re down to where the building most interfaces with the people
+    who will be living in it, and they discover that some important things were left
+    out, and some ideas that seemed so sensible on the plans aren’t going to work.
+- location: 64%
+  highlight: Finally the work crew goes away and the occupants move in.
+  note: This is at least not the case for devops wrt. building software.
+- location: 64%
+  highlight: 'ecopoiesis”: the process of a system making a home for itself.'
+- location: 65%
+  highlight: The countermanding sign is an example of the way most problems are handled
+    in buildings once they’re occupied. The solutions are inelegant, incomplete, impermanent,
+    inexpensive, just barely good enough to work. The technical term for it, which
+    arose from decision theory a few decades back, is “satisficing.”22 It is precisely
+    how evolution and adaptation operate in nature.
+- location: 65%
+  highlight: SATISFICING doesn’t try to solve problems. It reduces them just enough.
+- location: 65%
+  highlight: Zero expense, zero waste of time, scant investment in an evanescent piece
+    of technology, but a highly customized and convenient workspace.
+- location: 65%
+  highlight: The advantage of ad hoc, make-do solutions is that they are such a modest
+    investment, they make it easy to improve further or to tweak back a bit.
+- location: 65%
+  highlight: Style cramps life, and life erodes style. All too soon the unified look
+    is polluted by use, and it’s time to hire someone to supply another alien unity.
+- location: 66%
+  highlight: Paradoxically, habit is both the product of learning and the escape from
+    learning. We learn in order not to learn. Habit is efficient; learning is messy
+    and wasteful. Learning that doesn’t produce habit is a waste of time. Habit that
+    does not resist learning is failing in its function of continuity and efficiency.
+- location: 66%
+  highlight: A third level of learning is “learning to learn.”
+- location: 66%
+  highlight: Particularly worth examining is the history of the “open office,” an
+    innovation that swept the world in a decade.
+- location: 66%
+  highlight: What used to be semipermanent Space plan material had turned into mobile
+    Stuff.
+- location: 66%
+  highlight: no great improvement in costs or flexibility was detected.
+- location: 67%
+  highlight: was designed by professionals for professionals and assumed no incremental
+    change and no handling by building dwellers.
+- location: 67%
+  highlight: Integrating all the complexity in one bundle meant that only a specialist
+    could understand or handle the system,
+  note: Ironies of Automation
+- location: 67%
+  highlight: "“We found that any user sophisticated enough to seek out a ‘smart’ building
+    was also sophisticated enough to home-brew a more flexible system.”"
+- location: 67%
+  highlight: These were classic cases of overspecificity, overcentralized control,
+    and “tight fit.”
+- location: 68%
+  highlight: Change is often followed by reversal of the change,
+- location: 68%
+  highlight: most change is really undertaken as a trial, no matter what people say
+    at the time. And most trials are errors.
+- location: 68%
+  highlight: Smart organizations, therefore, push control of space as far “down” the
+    organization as they can.
+- location: 68%
+  highlight: At each level of scale, it is those actually using the space who understand
+    best how it can made/altered to have the character of being conducive to the work,
+- location: 69%
+  highlight: 'The lesson: adaptivity too can be overspecified.'
+- location: 69%
+  highlight: "“The thing which has characterized MIT’s success is a physical environment
+    which does not impair communication and set up arbitrary barriers to it."
+- location: 70%
+  highlight: The common attribute of vernacular remodeling (and construction) is that
+    it is done without plans. You proceed by improving on what already exists, following
+    wherever usage demands. “Wanderer,” wrote a Spanish poet, “there is no path. You
+    lay down a path in walking.”
+- location: 70%
+  highlight: "“Evidently organisms adapt well enough to ‘satisfice’; they do not,
+    in general, ‘optimize.”’ In 1958 he wrote, “To optimize requires processes several
+    orders of magnitude more complex than those required to satisfice.”"
+- location: 71%
+  highlight: ALL BUILDINGS are predictions. All predictions are wrong.
+- location: 71%
+  highlight: Buildings can be designed and used so it doesn’t matter when they’re
+    wrong.
+- location: 71%
+  highlight: The product of skilled scenario work is not a plan but a strategy. Where
+    a plan is based on prediction, a strategy is designed to encompass unforeseeably
+    changing conditions. A good strategy ensures that, no matter what happens, you
+    always have maneuvering room.
+- location: 71%
+  highlight: SCENARIO PLANNING leads to a more versatile building. It takes advantage
+    of the information developed by programming (detailed querying of building users)
+    and offsets the major limitation of programming (overspecificity to immediate
+    desires). The building is treated as a strategy rather than just a plan.
+- location: 71%
+  highlight: many a building is a brilliant (or pedestrian) design solution to the
+    wrong design problem,
+- location: 71%
+  highlight: "“When architects design buildings for themselves, you invariably have
+    an interesting time.”"
+- location: 71%
+  highlight: his highest priority in planning the building was “to force interaction
+    between research groups and individuals….”
+- location: 72%
+  highlight: The great virtue of programming is that it deeply involves the users
+    of a building and makes it really their building. The great vice of programming
+    is that it over-responds to the immediate needs of the immediate users, leaving
+    future users out of the picture,
+- location: 72%
+  highlight: He gets the client to discuss the vision of the building at the very
+    beginning in some depth, and then he can harken back to that vision when obsessive
+    details threaten to overwhelm the building with fussiness. Vision is generic,
+    and generic is adaptive.
+- location: 72%
+  highlight: 'The iron rule of planning is: whatever a client or an architect says
+    will happen with a building, won’t.'
+- location: 72%
+  highlight: It never works. The future is no more controllable than it is predictable.
+    The only reliable attitude to take toward the future is that it is profoundly,
+    structurally, unavoidably perverse.
+- location: 72%
+  highlight: instead of converging on a single path, its whole essence is divergence.
+- location: 72%
+  highlight: The group ranks these driving forces in terms of importance and uncertainly,
+    placing the most important and most uncertain highest, because it is the important
+    uncertainties that will drive the scenarios apart.
+  note: 2x2
+- location: 73%
+  highlight: The goal is to develop scenarios that are both plausible and surprising—shocking,
+    in fact.
+- location: 73%
+  highlight: A building is a huge investment, a black tarry pit of sunk costs, a trap
+    and a prison.
+- location: 73%
+  highlight: "“Never expect a building to solve organizational problems.”"
+- location: 74%
+  highlight: Anyone could reach in and move things around.
+- location: 75%
+  highlight: Some design is better if it’s postponed.
+- location: 75%
+  highlight: Taking a strategic approach to a building may mean postponing many design
+    decisions and leaving them to the eventual users of the building.
+- location: 75%
+  highlight: Postponing some of the design yields more building for less money,
+- location: 75%
+  highlight: A building is not something you finish. A building is something you start.
+- location: 75%
+  highlight: A building “learns” only through people learning, and individuals typically
+    learn much faster than whole organizations.
+- location: 76%
+  highlight: architects maturing from being just artists of space to artists of time.
+- location: 76%
+  highlight: Initial conservatism would be the natural result of a scenario approach
+    to design,
+- location: 76%
+  highlight: Revisiting and changing design decisions must not be allowed to stop
+    or to confuse the drive toward completion.
+- location: 76%
+  highlight: there needs to be more money than usual spent on the basic Structure,
+    less on finishing, and more on perpetual adjustment and maintenance.
+- location: 77%
+  highlight: Sixty percent of the final cost of a mortgaged building disappears as
+    interest to the bank instead of going into the building.
+- location: 77%
+  highlight: the mortgage temptation—buy too much now, pay too much later.
+- location: 77%
+  highlight: The temptation to customize a building around a new technology is always
+    enormous, and it is nearly always unnecessary.
+- location: 80%
+  highlight: Try things first. Feel your way.
+- location: 80%
+  highlight: 'beware: in the real world “temporary” is permanent most of the time.
+    If the cheap trial worked, it will be left alone, no matter how funky it is. If
+    it failed, it’s embarrassing to fix. Life rushes on to more pressing or interesting
+    problems.'
+- location: 80%
+  highlight: Some say you should flee a building while it is being finished or remodeled.
+    I recommend occupying it. Bad as the inconvenience and aggravation get, it’s worthwhile
+    for the fine-tuning that only presence at the worksite affords.
+- location: 81%
+  highlight: every building has some crucial parts that have to be done carefully
+    for it to age well.
+- location: 81%
+  highlight: wabi sabi—“the recognition that in a beautiful thing there is always
+    some part which is lovingly and carefully done, and some parts which are very
+    roughly done, because the compensation between the two is necessary in a real
+    thing.”
+- location: 81%
+  highlight: "“Finishing is never finished,” but at some point you have to just stop,
+    let the builders go away, and start living in the place."
+- location: 81%
+  highlight: It will take a year to work out just the major bugs. In the first year
+    of the Media Lab building at MIT, the elevator caught fire, the revolving door
+    broke weekly, all the doorknobs in the building failed and had to be replaced,
+    the automatic door closers were stronger than people and had to be adjusted, and
+    an untraceable stench of something horribly dead filled the public lecture hall
+    for months. This is normal.
+- location: 81%
+  highlight: "“After seeing this for a while and seeing that it was fundamental, we
+    hired someone just to handle those problems—a full-time handyman for our clients."
+- location: 82%
+  highlight: We don’t bill for much of his time. We believe it’s our duty in building
+    a building that it should work well for twenty-five or fifty years. We’re trying
+    to make a building that doesn’t need his time, and whatever time of his it needs
+    is our responsibility.
+- location: 82%
+  highlight: "“We get to see what works in our buildings and what doesn’t work."
+- location: 82%
+  highlight: Besides spare parts, a new building needs a complete and accurate record
+    of itself.
+- location: 82%
+  highlight: In a healthy building, maintenance, correction of faults, and improvements
+    all blend together.
+- location: 82%
+  highlight: It’s a waste to do anything for just one reason.
+- location: 83%
+  highlight: Learning in a building, then, is a simultaneous process of constant self-healing
+    and of arranging for greater possibilities.
+- location: 83%
+  highlight: Nuances are as important as systemic problems.
+- location: 83%
+  highlight: Fine-tuning is what turns a building from a nuisance into a joy.
+- location: 83%
+  highlight: The point is to make adjustments to a building in a way that is always
+    future-responsible—open to the emerging whole, hastening a richly mature intricacy.
+    The process embraces error; it is eager to find things that don’t work and to
+    try things that might not work. By failing small, early, and often, it can succeed
+    long and large. And it turns occupants into active learners and shapers rather
+    than passive victims.
+- location: 83%
+  highlight: That goes better if the place is neither owned nor maintained by remote
+    antagonists, because they distance the building from its users. What makes a building
+    learn is its physical connection to the people within.
+- location: 83%
+  highlight: Finally, an adapted state is not an end state. A successful building
+    has to be periodically challenged and refreshed, or it will turn into a beautiful
+    corpse.
+- location: 84%
+  highlight: City planning used to imitate architecture, and it failed because of
+    that.
+  note: And software development too?
+- location: 84%
+  highlight: Get down to cases—what exactly is the performance record of buildings
+    that won architectural awards?
+- location: 84%
+  highlight: there were two types of people in the world—those who deal with something
+    new by really looking at it, devoid of preconception, versus those who prefer
+    to form hypotheses first and then study the thing to see which ideas were right.
+    Both are honorable and productive. With “Look first,” new perception changes understanding.
+    With “Think first,” new understanding changes perception.
+- location: 84%
+  highlight: Still, theories mislead as much as they lead.
+- location: 85%
+  highlight: We measure what is easy to measure and ignore what is difficult.
+- location: 85%
+  highlight: There’s no reason to rely only on professionals.
+- location: 87%
+  highlight: People will be as baffled trying to program their house as they were
+    trying to program the early video cassette players.
+  note: Yup.
